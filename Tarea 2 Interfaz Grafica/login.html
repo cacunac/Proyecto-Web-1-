@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Interfaz Web</title>
+    <meta charset="utf-8">
+    <link href="imagenes/logo.png" rel="icon">      
+    <link href="css/styles.css" rel="stylesheet">    
+  </head>  
+
+  <body>
+
+  <section class="banner">
+    <video autoplay loop class="video">
+      <source src="videos/bannerVideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="index">
+      <img src="imagenes/logo.png" alt="logo" class="logoIndex">
+      <br>
+      <br>
+      <form method="post">
+      <fieldset>
+        <legend><h3>Inicio de sesion</h3></legend>
+        <div>            
+          <div >
+            <br>
+            <label class="logintexto" for="in-txt-user">Usuario:</label>
+            <br>
+            <input class="inputs" id="in-txt-user" type="text" placeholder="Ingrese su usuario">
+            <br>
+          </div>
+          <br>
+          <div >
+            <label class="logintexto" for="in-txt-pass">Contraseña:</label>
+            <br>
+            <input class="inputs" id="in-txt-pass" type="password" placeholder="Ingrese su contraseña">
+          </div> 
+          <div >
+            <a href="landing.html" class="btnLogin" id="btn-login">Iniciar</a>
+        </div>
+      </div>
+      
+      <br><br> 
+
+    </fieldset>
+    </form>
+
+    <br><br>
+
+    </div>
+  </section>
+    
+    <!-- programacion JS -->
+    <script src="js/login.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    
+  </body>
+</html>  

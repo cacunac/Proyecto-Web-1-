@@ -1,0 +1,523 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* body general del sitio */
+.bodySitio  {
+  height: 100%;
+  background-color: #f8f8f9;
+}
+
+.body  {
+  height: 100%;
+}
+
+
+
+/*ESTILOS PAGINA INDEX*/
+
+/* Banner pagina index */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+.banner .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: blur(2px) brightness(0.5); /* borroso y oscuro */
+  z-index: -1;
+}
+
+/* Cuadro central transparente sobre el video*/
+.index {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.15); /* semi-transparente */
+  backdrop-filter: blur(10px); /* difumina lo que está detrás */
+  padding: 40px 60px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  max-width: 90%;
+}
+
+/* titulo en cuadro central*/
+.index h1 {
+  font-size: 10px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  font-family:Sugo Display;
+}
+
+/* p en cuadro central*/
+
+.index p {
+  font-size: 10px1.2;
+  margin-bottom: 30px;
+}
+
+/* Botón "Siguiente" del index */
+.index .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #747474;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.logoIndex{
+    width: 20%;
+    border-radius: 50%; /*pone el borde circular*/
+    object-fit: center;
+}
+
+
+/*FIN DE ESTILOS PAGINA INDEX*/
+
+/*LOGIN*/
+
+.inputs{
+  width: 80%;
+  padding: 12px;
+  margin: 10px;
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+.logintexto {
+  font-size:larger;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Botón "Siguiente" del login */
+ .btnLogin {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #747474;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-top: 50px; /* hace para abajo el boton" */
+}
+
+/*Footer*/
+
+ footer {
+  background-image: url("../imagenes/banner.jpg");
+  background-color: rgb(226, 226, 226); 
+  width: 100%; /*ancho de 100% cubre toda la pagina*/
+  padding-left: 20px; /*rellenos a la izquierda*/
+  padding-right: 20px; /*rellenos a la derecha */
+  padding-top: 10px; /*rellenos arriba*/
+  padding-bottom: 10px; /*rellenos bajo*/
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Distribuye los elementos */
+  padding: 10px 20px;
+
+}
+ footer .h3F{
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Sugo Display;
+  align-content: center;
+}
+
+
+/* Cuadro central del login */
+.indexF {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.3); /* semi-transparente */
+  backdrop-filter: blur(30px); /* difumina lo que está detrás */
+  padding: 60px 80px;
+  border-radius: 35px;
+  text-align: center;
+  color: #fff;
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  padding: 12px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #747474;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.a2:hover{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+
+}
+
+.logoLanding{
+    width: 30%;
+    border-radius: 50%; /*pone el borde circular*/
+    float: center;
+}
+
+
+
+/*apps provisional para cuando se haga el examen se modifica*/
+.apps {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.error-container {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 48px;
+  color: #dc3545;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+header {
+  background-image: url("../imagenes/banner.jpg");
+  background-color: rgb(226, 226, 226); 
+  width: 100%; /*ancho de 100% cubre toda la pagina*/
+  padding-left: 20px; /*rellenos a la izquierda*/
+  padding-right: 20px; /*rellenos a la derecha */
+  padding-top: 10px; /*rellenos arriba*/
+  padding-bottom: 10px; /*rellenos bajo*/
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Distribuye los elementos */
+  padding: 10px 20px;
+}
+
+/*sitio*/
+
+@font-face {
+  font-family: 'Sugo Display';
+  src: url('../fonts/Sugo-Pro-Display-Light-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sugo Display Thin';
+  src: url('../fonts/Sugo-Pro-Display-Thin-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header h1{
+  font-family: 'Sugo Display', sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+
+/*tarjetas de todo el sitio*/
+.contenedorTarjetas {
+  width: 80%;
+  margin: auto;
+  padding-top: 90px; /* espacio debajo del header*/
+}
+
+/*area destacada*/
+
+.destacada {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 48px;
+}
+
+.destacada h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+/*espacio requerido por temas*/
+
+.area-tarjeta {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px;
+  width: 100%;
+}
+.area-tarjeta2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.tarjetas {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.tarjetas p {
+  font-size:large;
+  color:rgb(0, 0, 0);
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tarjetas h3 {
+  font-family: 'Sugo Display Thin', sans-serif;
+  color: #82898f;
+  text-align: justify;
+  font-size: x-large;
+}
+
+/*titulos de tarjetas*/
+
+.titulos{
+  font-family: 'Sugo Display', sans-serif;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+
+.sitio img{
+    width: 10%;
+    float: center;
+}
+
+
+.aSitio {
+  display: inline-block;
+  padding: 12px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9a9a9a;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  list-style-type: none
+
+}
+
+.a2:hover{
+  box-shadow:0 8px 16px 0 rgba(232, 232, 232, 0.6)
+}
+
+/*imagenes del sitio*/
+
+
+.imagen-Colorado {
+  background-image: url("../imagenes/Colorado.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+.imagen-Noruega {
+  background-image: url("../imagenes/noruega.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+
+.imagen-Colombia {
+  background-image: url("../imagenes/colombia.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+
+.imagen-CostaRica {
+  background-image: url("../imagenes/cr.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+.imagen-Bali {
+  background-image: url("../imagenes/Bali.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+.imagen-Roma {
+  background-image: url("../imagenes/roma.jpeg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+.imagen-Cancun {
+  background-image: url("../imagenes/cancun.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+}
+
+/*texto decorativo que va encima del las imagenes*/
+
+.textoImagen {
+  background-color: white;
+  color: black;
+  font-size: xx-large; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  font-family: "Sugo Display";
+}
+
+/*logo de nuevo*/
+
+.ribbon { 
+  width: 100px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #26aa15;
+  color: white;
+  font-family:Sugo Display;
+  font-size: x-large;
+}
+
+.destacada ul.b {
+  list-style-type: disc;
+  font-family:Sugo Display Thin ;
+  font-size: large;
+}
+
+/*video de la segunda seccion*/
+
+.tarjetas .video {
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  
+
+}
+
+li{
+    list-style-type: none
+}
+
+/*lugares disponibles en forma de tabla con una sola columna*/
+
+
+.columnas {
+  float: left;
+  padding: 5px;
+  width: 33%;
+}
+
+.precioDelPaquete {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.precioDelPaquete:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.precioDelPaquete .header {
+  background-color: #25a0cd;
+  color: white;
+  font-size: 25px;
+}
+
+.precioDelPaquete li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.precioDelPaquete .grey {
+  background-color: #eee;
+  color: #dc3545;
+  font-size: 20px;
+}
+
+.botonPaquete {
+  background-color: #bcbcbc;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
